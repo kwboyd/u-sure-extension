@@ -1,0 +1,13 @@
+{
+  "name": "U sure?",
+  "version": "1.0",
+  "description": "A little reminder for yourself",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "js": ["content.js"],
+    "css": ["styles.css"],
+    "matches": ["*://*.instagram.com/*", "*://*.twitter.com/*", "*://*.tumblr.com/*", "*://*.facebook.com/*"],
+    "run_at": "document_start"
+  }],
+  "web_accessible_resources": ["addie.png"]
+}
